@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Moon-walk';
+    src: url('../assets/moon-walk.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: Poppins;
+    background-color: #000720;
+    user-select: none;
+    height: 100vh;
+}
+
+.sticky-go-up-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+}
+
+.sticky-go-up-btn i{
+    font-size: 35px;
+    color: #fff;
+    border-radius: 7px;
+    margin: 1rem;
+    padding: 8px;
+    height: 3.3rem;
+    background-color: #1a1635;
+    cursor: pointer;
+}
+
+.navbar-wrapper{
+    align-self: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.5rem 7.5rem;
+}
+
+.navbar-container {
+    backdrop-filter: blur(5px);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 4.8rem;
+    border-radius: 10px;
+}
+
+.navigations {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigations a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navigations a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #000720;
+    border-radius: 10px;
+}
+
+.zairza-logo img{
+    height: 30px;
+}
+
+.zairza-logo {
+    cursor: pointer;
+}
+
+.register-button button {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    width: 7rem;
+    height: 2.3rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.register-button button:hover {
+    opacity: 0.6;
+}
+
+#skills-description {
+    margin: 0rem 0rem;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 6rem;
+}
+
+.desc-para {
+    margin-top: 100px;
+    width: 32rem;
+}
+
+#home-begins {
+    height: 10rem;
+}
+
+.shape1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.shape2 {
+    position: absolute;
+    top: 15%;
+    right: 22%;
+}
+
+.shape1 img {
+    height: 160px;
+    width: 250px;
+}
+
+.register-link {
+    margin: 3px 0 24px 0;
+}
+
+.register-link a{
+    font-size: 800;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 19px;
+}
+
+.explore-domains-btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 4px 7px;
+    cursor: pointer;
+}
+.explore-domains-btn a{
+    text-decoration: none;
+}
+
+.explore-domains-btn button:hover{
+    background-color: #9a8dec;
+    color: #fff;
+}
+
+.explore-domains-btn img{
+    height: 25px;
+}
+
+.by-zairza {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.by-zairza img {
+    height: 30px;
+}
+
+.shape3{
+    height: 200px;
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    z-index: -100;
+}
+
+.process-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
