@@ -37,41 +37,58 @@
     </div>
     <div class="navbar-wrapper">
         <div class="navbar-container">
-            <div class="zairza-logo">
-                <img src="../assets/skills.png" alt="Skills Logo">
+            <div class="contents-nav">
+                <div class="zairza-logo">
+                    <img src="../assets/skills.png" alt="Skills Logo">
+                </div>
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navigations">
+                    <a href="#process-wrapper">Process</a>
+                    <a href="#timeline-wrapper">Timeline</a>
+                    <a href="#perks-wrapper">Perks</a>
+                    <a href="#domains-wrapper">Explore Domains</a>
+                    <a href="#faqs-wrapper">FAQs</a>
+                </div>
+                <div class="register-button">
+                    <a href="">
+                        <button>Register</button>
+                    </a>
+                </div>
             </div>
-            <div class="navigations">
-                <a href="#process-wrapper">Process</a>
-                <a href="#timeline-wrapper">Timeline</a>
-                <a href="#perks-wrapper">Perks</a>
-                <a href="#domains-wrapper">Explore Domanins</a>
-                <a href="#faqs-wrapper">FAQs</a>
-            </div>
-            <div class="register-button">
-                <a href="">
-                    <button>Register</button>
-                </a>
+            <div class="dropdown-menu">
+                <a href="#process-wrapper" onclick="closeMenu()">Process</a>
+                <a href="#timeline-wrapper" onclick="closeMenu()">Timeline</a>
+                <a href="#perks-wrapper" onclick="closeMenu()">Perks</a>
+                <a href="#domains-wrapper" onclick="closeMenu()">Explore Domains</a>
+                <a href="#faqs-wrapper" onclick="closeMenu()">FAQs</a>
             </div>
         </div>
     </div>
+    
+    
+
 
     <div id="skills-description">
         <div class="skills-description-person">
             <img src="../assets/homeDescImg.png" alt="">
         </div>
         <div class="desc-para">
-            <div class="desc-head" style="color: #9a8dec; font-size: 35px;">
+            <div class="desc-head">
                 2K24
             </div>
-            <div class="skills-head" style="font-family: Moon-walk; font-size: 60px;">
+            <div class="skills-head">
                 SKILLS++
             </div>
-            <div class="short-desc" style="font-size: 25px;">
+            <div class="short-desc">
                 Elevate Your Experience
             </div>
             <br>
             <br>
-            <div class="desc" style="font-weight: 400; font-size: 17px; word-spacing: 1px; line-height: 30px;">
+            <div class="desc">
                 Boost your skills with guidance in various tech domains. Gain expert knowledge, hands-on experience,
                 personalized mentoring, and earn a certification. Transform your future,
             </div>
@@ -106,7 +123,7 @@
                 <div class="skills-short-desc">
                     What Is Skills++
                 </div>
-                <div class="process-moon-text" style="font-family: Moon-walk; font-size: 60px; color: #fff;">
+                <div class="process-moon-text">
                     PROCESS
                 </div>
             </div>
@@ -129,20 +146,21 @@
                         <img src="data:image/png;base64,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"
                             alt="">
                         <div>Earn <b>badges</b> on successful submission of assignments of first 3 weeks and a
-                            <b>certificate</b> on the 4th week.</div>
+                            <b>certificate</b> on the 4th week.
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="process-img">
-            <img src="../assets/processImg.png" alt="" style="height: 450px;">
+            <img src="../assets/processImg.png" alt="">
         </div>
     </div>
 
     <div id="timeline-wrapper">
         <div class="timeline-conents">
             <div class="event-shedule">Event Schedule</div>
-            <div class="timeline-moon" style="font-family: Moon-walk; font-size: 65px;">TIMELINE</div>
+            <div class="timeline-moon" style="">TIMELINE</div>
             <div class="weeks">
                 <div>
                     Week 0: &nbsp;&nbsp;&nbsp; 15 <sup>th</sup>Aug - 21<sup>th</sup>Aug
@@ -160,6 +178,20 @@
         </div>
     </div>
 
+
+    <script>
+        function toggleMenu() {
+            const dropdown = document.querySelector('.dropdown-menu');
+            dropdown.classList.toggle('show');
+        }
+
+        function closeMenu() {
+            const dropdown = document.querySelector('.dropdown-menu');
+            dropdown.classList.remove('show');
+        }
+
+
+    </script>
 </body>
 
 </html>

@@ -54,11 +54,12 @@ body {
     backdrop-filter: blur(12px);
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
-    height: 4.8rem;
     border-radius: 10px;
+
 }
 
 .navigations {
@@ -79,6 +80,108 @@ body {
     background-color: #000720;
     border-radius: 10px;
 }
+
+.register-button button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+.dropdown-menu {
+    display: none;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    margin: 1rem 0;
+    color: #000;
+    text-align: left;
+    margin-left: 2rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 19px;
+    text-decoration: none;
+    background-color: none;
+    width: fit-content;
+}
+
+.dropdown-menu a:hover {
+    background-color: #000720;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contents-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-wrapper {
+        padding: 2.5rem 3.5rem;
+    }
+    .navigations {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar-container {
+        justify-content: space-between;
+    }
+
+    .register-button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .dropdown-menu.show {
+        display: block;
+        max-height: 20rem;
+    }
+}
+
+
+
+
+
+
+
+
 
 .zairza-logo img {
     height: 30px;
@@ -160,13 +263,14 @@ body {
 
 @keyframes text-register {
     from {}
-    
+
     to {
         color: rgba(240, 248, 255, 0.361);
     }
 }
 
 .explore-domains-btn button {
+    box-shadow: 0 0 10px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,7 +338,7 @@ body {
 
 @keyframes text-what-is-skills {
     from {}
-    
+
     to {
         color: #998dec36;
     }
@@ -244,7 +348,7 @@ body {
 
 .steps {
     width: 94%;
-}   
+}
 
 .steps li {
     display: flex;
@@ -289,7 +393,7 @@ body {
     color: #000720;
     font-size: 32px;
     font-weight: 600;
-    
+
 
     animation-name: text-event-schedule;
     animation-duration: 1s;
@@ -300,7 +404,7 @@ body {
 
 @keyframes text-event-schedule {
     from {}
-    
+
     to {
         color: #000720a1;
     }
@@ -311,4 +415,130 @@ body {
 .weeks {
     color: #1a1635;
     font-weight: 600;
+}
+
+.desc-head {
+    color: #9a8dec;
+    font-size: 35px;
+}
+
+.skills-head {
+    font-family: Moon-walk;
+    font-size: 60px;
+}
+
+.short-desc {
+    font-size: 25px;
+}
+
+.desc-para .desc {
+    font-weight: 400;
+    font-size: 17px;
+    word-spacing: 1px;
+    line-height: 30px;
+}
+
+.process-img img {
+    height: 450px;
+}
+
+.process-moon-text {
+    font-family: Moon-walk;
+    font-size: 60px;
+    color: #fff;
+}
+
+.timeline-moon {
+    font-family: Moon-walk;
+    font-size: 65px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #skills-description {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .skills-description-person img {
+        height: 27rem;
+    }
+
+    .desc-para {
+        margin-top: -110px;
+        width: 100%;
+    }
+
+    .desc-head {
+        font-size: 25px;
+    }
+
+    .skills-head {
+        font-size: 50px;
+    }
+
+    .short-desc {
+        font-size: 23px;
+    }
+
+    .desc-para desc {
+        font-size: 15px;
+    }
+
+    .shape2 {
+        right: 60%;
+    }
+
+    .shape1 {
+        height: 10px;
+        width: 250px;
+    }
+
+    #process-wrapper {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .shape3 {
+        top: -150px;
+    }
+
+    .process-img img {
+        height: 350px;
+    }
+
+    .skills-short-desc {
+        font-size: 25px;
+    }
+
+    .steps li {
+        font-size: 15px;
+    }
+
+    .process-moon-text {
+        font-size: 55px;
+    }
+
+    .process-left-text {
+        padding: 20px;
+    }
+
+    .event-shedule {
+        font-size: 22px;
+    }
+
+    .timeline-moon {
+        font-size: 60px;
+    }
+
+    .weeks div {
+        font-size: 15px;
+    }
 }
