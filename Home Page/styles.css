@@ -148,7 +148,22 @@ body {
     font-size: 800;
     text-decoration: none;
     color: aliceblue;
-    font-size: 19px;
+    font-size: 20px;
+
+    animation-name: text-register;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+@keyframes text-register {
+    from {}
+    
+    to {
+        color: rgba(240, 248, 255, 0.361);
+    }
 }
 
 .explore-domains-btn button {
@@ -218,9 +233,7 @@ body {
 }
 
 @keyframes text-what-is-skills {
-    from {
-        
-    }
+    from {}
     
     to {
         color: #998dec36;
@@ -286,9 +299,7 @@ body {
 }
 
 @keyframes text-event-schedule {
-    from {
-        
-    }
+    from {}
     
     to {
         color: #000720a1;
