@@ -453,7 +453,42 @@ body {
     font-size: 65px;
 }
 
+.footer-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #9A8DEC;
+    flex-wrap: wrap;
+    padding: 1.8rem;
+    margin-top: 1rem;
+}
 
+.footer-wrapper a{
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-wrapper .footer-skills{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    width: 47%;
+    color: #fff;
+    font-weight: 500;
+}
+.footer-wrapper .footer-skills .footer-desc-ending{
+    opacity:0.6;
+}
+
+.footer-wrapper img{
+    height: 45px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 20px;
+}
 
 
 
@@ -540,5 +575,10 @@ body {
 
     .weeks div {
         font-size: 15px;
+    }
+    .footer-wrapper .footer-skills{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
     }
 }
